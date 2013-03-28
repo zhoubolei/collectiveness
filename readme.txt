@@ -17,5 +17,4 @@ Measuring collectiveness in each frame of a real crowd with detecting collective
 
 Mar. 28 2013, Bolei Zhou
 
-Citation of the paper:
 Bolei Zhou, Xiaoou Tang, and Xiaogang Wang. "Measuring Crowd Collectiveness." Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2013) 
