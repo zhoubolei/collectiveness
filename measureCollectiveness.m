@@ -1,4 +1,4 @@
-function [collectivenessSet, crowdCollectiveness] = measureCollectiveness( curX, curV, para)
+function [collectivenessSet, crowdCollectiveness, Z] = measureCollectiveness( curX, curV, para)
 %Objective: to measure the collectiveness of moving points.
 %   curX:                   spatial location of points.
 %   curV:                   velocity of points.
