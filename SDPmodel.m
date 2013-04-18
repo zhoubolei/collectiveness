@@ -1,5 +1,5 @@
 clear
-addpath('D:\code\video_toolbox\');
+addpath('util\');
 %% parameters of Self-Driven Particles
 SDPpara.nPoint = 400;         %number of particles
 SDPpara.L = 7;                %size of the ground 
