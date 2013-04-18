@@ -1,6 +1,7 @@
 %% Measuring collectiveness at each frame of a video
 % Mar.28 2013, Bolei Zhou
 clear
+addpath('util\');
 curVideo = 'realcrowd\';
 curTrkName = 'klt_3000_10_trk.txt';
 
