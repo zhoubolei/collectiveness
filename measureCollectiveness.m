@@ -10,7 +10,7 @@ weightedAdjacencyMatrix = computeAdj(curX, curV, para.K);
 
 %% step 2: integrating all the paths with regularization
 I_matrix = eye(size(weightedAdjacencyMatrix,1));
-Z = inv(I_matrix-para.lamda*weightedAdjacencyMatrix) - I_matrix;
+Z = inv(I_matrix-para.z*weightedAdjacencyMatrix) - I_matrix;
 collectivenessSet = sum(Z,2);
 crowdCollectiveness = mean(collectivenessSet);
 end

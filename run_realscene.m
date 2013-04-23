@@ -7,9 +7,9 @@ curTrkName = 'klt_3000_10_trk.txt';
 
 %% Collectiveness parameter
 para.K = 20;
-para.lamda = 0.5/para.K ;
-para.upperBound = para.K*para.lamda/(1-para.K*para.lamda);
-para.threshold = 0.6*para.lamda/(1-para.K*para.lamda);
+para.z = 0.5/para.K ;
+para.upperBound = para.K*para.z/(1-para.K*para.z);
+para.threshold = 0.6*para.z/(1-para.K*para.z);
 
 %%
 curClipFrameSet = dir([curVideo '\*.jpg']);

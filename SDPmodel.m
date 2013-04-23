@@ -1,9 +1,7 @@
 clear
-<<<<<<< HEAD
-addpath('util\');
-=======
 
->>>>>>> utility functions for Collective Motion Database
+addpath('util\');
+
 %% parameters of Self-Driven Particles
 SDPpara.nPoint = 400;         %number of particles
 SDPpara.L = 7;                %size of the ground 
@@ -14,16 +12,16 @@ SDPpara.outlierRatio = 0.2;     %outlier ratio
 
 %% parameters of collectiveness measurement
 para.K = 20;
-para.lamda = 0.5/para.K ;
-para.upperBound = para.K*para.lamda/(1-para.K*para.lamda);
-para.threshold = 0.4*para.lamda/(1-para.K*para.lamda);
+para.z = 0.5/para.K ;
+para.upperBound = para.K*para.z/(1-para.K*para.z);
+para.threshold = 0.4*para.z/(1-para.K*para.z);
 
 %% initilize the self-driven particles
 [curX,curVelocityDegree,XLabel,SDPpara] = SDP_initialXwithNoise(SDPpara);
 keyDotIndex = find(XLabel==1);      % the index of self-driven particles
 outlierIndex = find(XLabel==-1);    % the index of randomly moving points
 %% begin iteration
-
+figure
 while 1
     [nextX,nextVelocityDegree] = SDP_updateXwithOutlier(curX,curVelocityDegree,XLabel,SDPpara); % update SDP model
     curVelocityDegree = nextVelocityDegree;
